@@ -1,21 +1,9 @@
-body{
-	background:url(../img/stone-wall.jpg); 
-	color: ; 
-	font-family: "Open Sans", Helvetica, sans-serif, arial; 
-	font-size: 18px; /* 18px a· 16px = 1.125em */
-	font-weight: 300;
-	line-height: 1.2222222222em; /* 22px a· 18px = 1.22222222222em*/
-	text-align: left; 
-	text-shadow:1px 1px 0px #fff; 
+
+body,html{
+	margin:0;padding:0;
+	background-image:url(../img/stone-wall.jpg);
+	background-repeat: no-repeat;
 }
-.centro{
-	margin: 0 auto;
-	max-width:1200px; /*largura maxima do layout*/
-	width: 90%; /*ajuste do layout a  tela*/
-}
-/*.clearfixbody usado para adicionar um espaço vazio antes e depois dos elementos
-  evitando que os floats se aglomerem.
-*/
 .clearfixbody:before, .clearfixbody:after {
     content: " "; 
     display: table; 
@@ -26,11 +14,12 @@ body{
 .clearfixbody {
     *zoom: 1;
 }
+
 nav{
-	float:right;
-	margin-top:78px; 
-	text-align:right; 
-	width:61.6666666666667%; /* 500px a 1200px = 0.416666666666667 x 100 = 41.6666666666667%*/
+	float:center;
+	margin-top:20px; 
+	text-align:center; 
+	width:100%; /* 500px a 1200px = 0.416666666666667 x 100 = 41.6666666666667%*/
 }
 	nav ul{
 		list-style-type:none; 
@@ -42,16 +31,76 @@ nav{
 				margin-right: 2.5%; /* 30px a 1200px = 0.025 x 100 = 2.5%*/
 			}
 			nav a:link, nav a:visited{
-				color:#999;
-				font-size: 1.2222222222em; /* 22px a 18px = 1.2222222222em */
+				color:#07FCFC;
+				font-size: 2em; /* 22px a 18px = 1.2222222222em */
 				font-weight: 300;
 				letter-spacing: -0.0909090909em; /* -2px a 22px = -0.0909090909em */
 				line-height: 1.18181818182em; /* 26px a 22px = 1.18181818182em */
 				display:inline-block;
 			}
 			nav a.ativo:link, nav a:hover{
-				color:#0ac3fe; 
+				color:#07FCFC; 
 			}
-.historia{
-	background-image:url(../img/papiro.png);
+.wrapper{
+	height: 90vh;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	perspective: 0px;
+	transform-style: preserve-3d;
+	background-repeat: no-repeat;
 }
+.historia{
+	position: relative;
+	height: 100%;
+	min-height: 700px;
+	transform-style: inherit;
+}
+.historia:before{
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	background-size: 80% 110%;
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: translateZ(-1px) scale(1.5);
+}
+.text{
+	position: absolute;
+	left: 535px;
+	text-align: center;
+	top: 13%;
+	width: 45%;
+	padding: -8px 0;
+	background-color: none;
+
+	color: black;
+	text-shadow: 0 0 5px #000;
+	font-size: 20px;
+	text-align: center;
+}
+.img{
+	position: absolute;
+	left: 535px;
+	text-align: center;
+	top: 25%;
+	width: 45%;
+	padding: -8px 0;
+	background-color: none;
+
+	color: black;
+	text-shadow: 0 0 5px #000;
+	font-size: 20px;
+	text-align: center;
+}
+.bg1:before {
+  background-image:url(../img/papiro.png);
+}
+.bg2:before {
+  background-image:url(../img/stone-wall.jpg);
+}
+.bg:before {
+  background-image:url(../img/cidadela.jpg);
