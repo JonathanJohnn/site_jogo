@@ -1,7 +1,8 @@
+/*Geral*/
 
 body,html{
 	margin:0;padding:0;
-	background-image:url(../img/stone-wall.jpg);
+	background-image:url(../img/torch-wall.jpg);
 	background-repeat: no-repeat;
 }
 .clearfixbody:before, .clearfixbody:after {
@@ -41,6 +42,7 @@ nav{
 			nav a.ativo:link, nav a:hover{
 				color:#07FCFC; 
 			}
+			
 .wrapper{
 	height: 90vh;
 	overflow-x: hidden;
@@ -49,39 +51,55 @@ nav{
 	transform-style: preserve-3d;
 	background-repeat: no-repeat;
 }
+
 .historia{
 	position: relative;
 	height: 100%;
-	min-height: 700px;
+	min-height: 1500px;
 	transform-style: inherit;
 }
+
 .historia:before{
 	content: " ";
 	position: absolute;
-	top: 0;
+	top: -35%;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	z-index: -1;
-	background-size: 80% 110%;
+	background-size: 1440px 2240px;
 	background-repeat: no-repeat;
 	background-position: center;
 	transform: translateZ(-1px) scale(1.5);
 }
+
+.bg1:before {
+  background-image:url(../img/scroll.png);
+}
+.bg2:before {
+  background-image:url(../img/torch-wall.jpg);
+}
+.bg3:before {
+  background-image:url(../img/cidadela.jpg);
+}
+
 .text{
 	position: absolute;
-	left: 535px;
+	left: 650px;
 	text-align: center;
-	top: 13%;
-	width: 45%;
+	top: 6%;
+	width: 32%;
 	padding: -8px 0;
 	background-color: none;
 
 	color: black;
 	text-shadow: 0 0 5px #000;
-	font-size: 20px;
+	font-size: 18px;
 	text-align: center;
 }
+
+/*Galeria*/
+
 .img{
 	position: absolute;
 	left: 535px;
@@ -96,11 +114,5 @@ nav{
 	font-size: 20px;
 	text-align: center;
 }
-.bg1:before {
-  background-image:url(../img/papiro.png);
-}
-.bg2:before {
-  background-image:url(../img/stone-wall.jpg);
-}
-.bg:before {
-  background-image:url(../img/cidadela.jpg);
+
+  
