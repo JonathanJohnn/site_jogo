@@ -1,0 +1,214 @@
+.whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 1;
+    padding-top: 5px;
+}
+.fa-whatsapp{
+	color: #228B22;
+}
+.fa-facebook{
+	color: #0000FF;
+}
+.fa-instagram{
+	color: #8A2BE2;
+}
+.fa-linkedin{
+	color: #00008B;
+}
+.fa-github{
+	color: #000000;
+}
+@media screen and (max-width: 999px){
+	h2, a , a:link, a:visited{
+		color: #228b22;
+	}
+	a:hover{
+		color:f9ad0f;
+	}
+	header{
+		height: 195px;
+		text-align: center;
+	}
+	header h1 a {
+		background-position: 57% 0;
+		height: 126px;
+		margin-bottom: 15px;
+		width: 100%;
+	}
+	nav{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	nav a.ativo:link, nav a:hover{
+		color: #228b22;
+	}
+	.chamada{
+		height: 200px;
+	}
+	h2{
+		font-size: 2.222em;
+	}
+
+	.volta-topo{
+    position: relative;
+    bottom: 25px;
+	left:-355px;
+    padding-top: 0px;
+}
+}
+
+@media screen and (max-width: 630px){
+	*{
+		margin:0;
+		padding:0;
+	}
+	.centro{
+		width: 100%;
+	}
+	h2, a, a:link, a:visited{
+		color: #ff4500;
+	}
+	a:hover{
+		color:2fd0bc;
+	}
+	header{
+		border-bottom: none;
+		height: auto;
+		text-align: center;
+	}
+	header h1 a {
+		background-position: 50%;
+		display: inherit;
+		height: 126px;
+		width: 100%;
+	}
+	nav{
+		clear: both;
+	}
+	nav li{
+		background-color:#9c8cb9;
+		display: block;
+	}
+	nav li a{
+		height: 40px;
+		margin: 0 auto;
+		padding-top: 3px;
+		text-align: center;
+		text-shadow: none;
+		width: 100%;
+	}
+	nav li a:link{
+		color:#ffffff;
+		font-size: 1.388em;
+	}
+	nav li a.ativo:link, nav li a:hover, nav li a:visited{
+		background-color:#745f9a;
+		color: #ffffff;
+		text-decoration: none;
+	}
+	nav li a.ativo:hover, nav li a.ativo:visited{
+		background-color: #9c8cb9;
+	}
+
+	.copyleft, .social{
+		float: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	.social figure{
+		padding-top:10px
+	}
+	.volta-topo{
+		display:none;
+	}
+	.whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 1;
+    padding-top: 5px;
+
+	}
+	.whatsapp img{
+		padding-left: 10px;
+		width: 60px;
+		z-index: 2;
+	}
+	.mapa{
+		margin-top:10px;
+		height: 300px;
+	}
+	.meio-mapa{
+		margin-top:10px;
+		height: 380px;
+	}
+	form {
+		height: 100%;
+		width: 75%;
+	}
+}
+@media screen and (max-width:319px){
+	/* cores baixa resolução*/ 
+	h2, a, a:link, a:visited{
+		color:#79e1d5;
+	}
+	a:hover{
+		color:#2fd0bc;
+	}
+	header{
+		border-bottom:none;
+		height:auto;
+		text-align:center;
+	}
+	header h1 a{
+		background:url(../img/logo-criar-site-responsivo-menor.png) no-repeat;
+		background-position: 50%;
+		display:inherit;
+		height:90px;
+		width:100%
+	}
+	nav li{
+		background-color:#79e1d5;
+	}
+	nav li a.ativo:link, nav li a:hover, nav li a:visited{
+		background-color:#2fd0bc;
+		color:#fff;
+	}
+	nav li a.ativo:hover, nav li a.ativo:visited{
+		background-color:#2fd0bc;
+	}
+	/* diminuir frase de chamada */
+	.chamada{
+		height:140px;
+		margin-top:10px;
+		width:95%
+	}
+	h2{
+		font-size:1.1111111111em;
+		margin-bottom:15px;
+	}
+	.copyleft, .social{
+		float: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	.social figure{
+		padding-top:10px
+	}
+	.volta-topo{
+		display:none;
+	}
+	.whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: -5px;
+    z-index: 1;
+    padding-top: 5px;
+	}
+
+}
